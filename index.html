@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-commerce challenge</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="side-menu">
+                <img src="./images/icon-menu.svg">
+            </div>
+
+            <div class="logo">
+                <img src="./images/logo.svg">
+            </div>
+
+            <div class="navbar">
+                <ul class="nav">
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="icons">
+                <div class="icon">
+                    <img src="./images/icon-cart.svg" class="show-cart">
+                    <div class="cart-index"><p>0</p></div>
+                </div>
+                <div class="avatar">
+                    <img src="./images/image-avatar.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <main>
+                <div class="showcase">
+                    <img src="./images/image-product-1.jpg" name="gallery">
+                </div>
+                <div class="thumbnails">
+                    <img src="./images/image-product-1-thumbnail.jpg" class="image-thumbnail-one">
+                    <img src="./images/image-product-2-thumbnail.jpg" class="image-thumbnail-two">
+                    <img src="./images/image-product-3-thumbnail.jpg" class="image-thumbnail-three">
+                    <img src="./images/image-product-4-thumbnail.jpg" class="image-thumbnail-four">
+                </div>
+
+                <div class="preview-box">
+                    <div class="details">
+                        <span class="close-light-box">&times;</span>
+                    </div>
+                    <div class="image-box">
+                        <div class="slide">
+                            <div class="side-prev">
+                                <img src="./images/icon-previous.svg">
+                            </div>
+                            <div class="side-next">
+                                <img src="./images/icon-next.svg">
+                            </div>
+                        </div>
+
+                        <div class="show-img">
+                            <img src="./images/image-product-1.jpg" name="lightBox">
+                        </div>
+                    </div>
+
+                    <div class="lightBox-images">
+                        <img src="./images/image-product-1-thumbnail.jpg" class="image-lightBox-one">
+                        <img src="./images/image-product-2-thumbnail.jpg" class="image-lightBox-two">
+                        <img src="./images/image-product-3-thumbnail.jpg" class="image-lightBox-three">
+                        <img src="./images/image-product-4-thumbnail.jpg" class="image-lightBox-four">
+                    </div>
+                </div>
+            </main>
+            
+            <aside>
+                <span>SNEAKER COMPANY</span>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+
+                <div class="price">
+                    <div class="current-price">
+                        <h2>$125.00</h2><b>50%</b>
+                    </div>
+
+                    <div class="old-price">
+                        <strike>$250.00</strike>
+                    </div>
+                </div>
+
+                <div class="cart-icon">
+                    <div class="cart-update">
+                        <p class="decrement math"><img src="./images/icon-minus.svg" alt=""></p>
+                        <p class="result">0</p>
+                        <p class="increment math"><img src="./images/icon-plus.svg" alt=""></p>
+                    </div>
+
+                    <div class="cart-btn">
+                        <button type="button" class="btn"><img src="./images/icon-cart.svg"><a href="#">Add to cart</a></button>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <div class="shadow"></div>
+
+        <div class="nav-menu">
+            <img src="./images/icon-close.svg" class="close-side-menu">
+            <ul class="nav-bar">
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="cart-box">
+            <div class="cart-head">
+                <h5>Cart</h5>
+                <img src="./images/icon-close.svg" class="close-cart">
+            </div>
+
+
+            <div class="cart-body">
+                <div class="cart-item-one">
+                    <img src="./images/image-product-1-thumbnail.jpg" name="cartGallery">
+                </div>
+                <p>Fall Limited Edition Sneakers $<span class="shoe-price">125.00</span> x <span class="cart-value">0</span> <b>$</b><b class="output">0</b><b>.00</b></p>
+                <img src="./images/icon-delete.svg" class="delete-btn">
+
+            </div>
+
+            <p class="clear-msg"></p>
+
+            <button type="submit" class="btn-1"><a href="#">Checkout</a></button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

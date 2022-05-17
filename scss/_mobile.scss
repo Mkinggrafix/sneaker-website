@@ -1,0 +1,147 @@
+@media (max-width: 1024px) {
+    section{
+        width: 95%;
+        column-gap: .5rem;
+        align-items: center;
+
+        .showcase{
+            align-self: center;
+            img{
+                border-radius: 0;
+            }
+        }
+
+        .thumbnails{
+            width: 25rem;
+            column-gap: 1rem;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    header{
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .side-menu{
+            display: block;
+            cursor: pointer;
+        }
+    
+        .navbar{
+            display: none;
+        }
+    }
+
+    section{
+        width: 100%;
+        display: block;
+        padding-top: 0;
+
+        main{ 
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            padding-top: 2rem;
+            gap: 1rem;
+
+            .showcase{
+                img{
+                    width: 100%;
+                }
+            }
+
+            .thumbnails{
+                width: 20%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4,1fr);
+                row-gap: 5px;
+                align-items: center;
+
+                img{
+                    width: 4.5rem;
+                    border-radius: 5px;
+
+                    &:hover{
+                        opacity: 1;
+                        border: none;  
+                    }
+                }
+            }
+        }
+
+        aside{
+            padding: 0 15px;
+            padding-top: 1rem;
+
+            .price{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .cart-icon{
+                display: block;
+
+                .cart-update{
+                    width: 100%;
+                    padding: 15px;
+                }
+
+                .cart-btn{
+                    .btn{
+                        font-size: 1rem;
+                        width: 100%;
+                        margin: 1rem 0;
+                        padding: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 425px) {
+    .container{
+        width: 100%;
+    }
+
+    header{
+        width: 90%;
+
+        &::after{
+            display: none;
+        }
+    }
+
+    section{
+        main{
+            width: 100%;
+            display: block;
+            padding-top: 0;
+
+            .showcase img{
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .thumbnails{
+                display: none;
+            }
+        }
+    }
+
+    .cart-box{
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1.2rem;
+    }
+}
+
