@@ -1,4 +1,4 @@
-.cart-box{
+%global{
     width: 18rem;
     height: 13rem;
     background-color: $white;
@@ -11,8 +11,6 @@
     top: 4.6rem;
     right: 2rem;
     display: none;
-    // opacity: 0;
-    transition: all 1s;
 
     h5{
         margin-bottom: 2.5rem;
@@ -28,7 +26,7 @@
         }
     }
 
-    .cart-head{
+    .box-head{
         img{
             width: 10px;
             position: absolute;
@@ -38,6 +36,31 @@
         }
     }
 
+    .box-btn{
+        width: 100%;
+        background-color: $orange;
+        color: $white;
+        font-size: .8rem;
+        margin-top: 2rem;
+        padding: 13px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 400;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 500ms;
+
+        a{
+            color: $white;
+            text-align: center;
+        }
+    }
+}
+
+
+.cart-box{
+    @extend %global;
+    
     & > div{
         display: grid;
         grid-template-columns: 1fr 8fr 1fr;
@@ -64,25 +87,6 @@
         }
     }
 
-    .btn-1{
-        width: 100%;
-        background-color: $orange;
-        font-size: .8rem;
-        margin-top: 2rem;
-        padding: 13px;
-        border: none;
-        border-radius: 10px;
-        font-weight: 400;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 500ms;
-
-        a{
-            color: $white;
-            text-align: center;
-        }
-    }
-
     .delete-item{
         cursor: pointer;
     }
@@ -92,6 +96,8 @@
     }
 }
 
+
+// sidebar
 .nav-menu{
     height: 100vh;
     width: 0;
@@ -122,6 +128,36 @@
     }
 }
 
+// newsletter
+.newsletter{
+   @extend %global;
+
+   h5{
+       margin-bottom: 2rem;
+   }
+
+   input{
+       width: 100%;
+       color: $black;
+       padding: 8px 5px;
+       font-size: .8rem;
+       border: none;
+       border-bottom: 2px solid $orange;
+       margin-bottom: 10px;
+       outline: none;
+
+       &::placeholder{
+           color: $black;
+           opacity: 1;
+       }
+   }
+
+   .box-btn{
+       margin-top: .4rem;
+   }
+}
+
+// class list
 .pad-sideMenu{
     padding: 1.5rem 0 0 1.5rem;
 }
@@ -132,4 +168,18 @@
     color: $black;
     text-align: center;
     padding-top: 2.5rem;
+}
+
+.transition{
+    animation: trans 1s ease;
+}
+
+@keyframes trans{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }

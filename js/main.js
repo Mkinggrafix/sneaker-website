@@ -20,16 +20,18 @@ function closeSideBar() {
 const showCart = document.querySelector('.show-cart');
 const closeBtn = document.querySelector('.close-cart');
 const cartBox = document.querySelector('.cart-box');
+console.log(closeBtn)
 
 showCart.addEventListener('click', displayCart);
 closeBtn.addEventListener('click', closeCart);
 
 function displayCart(){
-    cartBox.style.display = 'block';
+    cartBox.classList.add('transition');
+    cartBox.style.display = "block";
 }
 
 function closeCart(){
-    cartBox.style.display = 'none';
+    cartBox.style.display = "none";
 }
 
 
@@ -48,7 +50,11 @@ function add(){
 
 
 function subtract(){
-    result.textContent--;
+    if (result.textContent == 0) {
+        result.textContent = 0
+    }else {
+        result.textContent--;
+    }
 }
 
 // update cart-index
@@ -89,6 +95,19 @@ function clearCart(){
     clearMsg.innerHTML = '<h4> Your cart is empty.</h4>'
 };
 
+// newsletter
+const newsletter = document.querySelector('.newsletter');
+const avatar = document.querySelector('.avatar');
+const closeNews = document.querySelector('.close-newsletter');
+
+avatar.addEventListener('click', (e) =>{
+    newsletter.classList.add('transition');
+    newsletter.style.display = 'block';
+})
+
+closeNews.addEventListener('click', (e) =>{
+    newsletter.style.display = 'none';
+})
 
 // Image Gallery
 let images = [];

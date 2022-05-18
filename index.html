@@ -29,12 +29,12 @@
             </div>
 
             <div class="icons">
-                <div class="icon">
-                    <img src="./images/icon-cart.svg" class="show-cart">
+                <div class="icon show-cart">
+                    <img src="./images/icon-cart.svg">
                     <div class="cart-index"><p>0</p></div>
                 </div>
                 <div class="avatar">
-                    <img src="./images/image-avatar.png" alt="">
+                    <img src="./images/image-avatar.png">
                 </div>
             </div>
         </header>
@@ -58,10 +58,10 @@
                     <div class="image-box">
                         <div class="slide">
                             <div class="side-prev">
-                                <img src="./images/icon-previous.svg">
+                                <img src="./images/icon-previous.svg" class="prev">
                             </div>
                             <div class="side-next">
-                                <img src="./images/icon-next.svg">
+                                <img src="./images/icon-next.svg" class="next">
                             </div>
                         </div>
 
@@ -96,9 +96,9 @@
 
                 <div class="cart-icon">
                     <div class="cart-update">
-                        <p class="decrement math"><img src="./images/icon-minus.svg" alt=""></p>
+                        <p class="decrement math"><img src="./images/icon-minus.svg"></p>
                         <p class="result">0</p>
-                        <p class="increment math"><img src="./images/icon-plus.svg" alt=""></p>
+                        <p class="increment math"><img src="./images/icon-plus.svg"></p>
                     </div>
 
                     <div class="cart-btn">
@@ -107,6 +107,7 @@
                 </div>
             </aside>
         </section>
+        
         <div class="shadow"></div>
 
         <div class="nav-menu">
@@ -121,7 +122,7 @@
         </div>
 
         <div class="cart-box">
-            <div class="cart-head">
+            <div class="box-head">
                 <h5>Cart</h5>
                 <img src="./images/icon-close.svg" class="close-cart">
             </div>
@@ -138,7 +139,22 @@
 
             <p class="clear-msg"></p>
 
-            <button type="submit" class="btn-1"><a href="#">Checkout</a></button>
+            <button type="submit" class="btn-1 box-btn"><a href="#">Checkout</a></button>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <div class="box-head">
+            <h5>Subscribe To Our Newsletter</h5>
+            <img src="./images/icon-close.svg" class="close-newsletter">
+        </div>
+        <div class="newsletter-body">
+            <form action="">
+                <input type="text" placeholder="Enter Username" id="username" required>
+                <input type="email" placeholder="Enter Email" id="email" required>
+
+                <button type="submit" class="btn-2 box-btn">Submit</button>
+            </form>
         </div>
     </div>
 

@@ -53,11 +53,8 @@ header .icons{
     justify-content: space-between;
     align-items: center;
 
-    icon{      
-        img{
-            width: 20px;
-            cursor: pointer;
-        }
+    .icon{     
+        cursor: pointer;
     }
 
     .cart-index{
